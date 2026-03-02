@@ -4,8 +4,8 @@ Clean_data/
 *.csv
 
 # Keep the data folder structure but not the files
-!Raw_data/
-Clean_data/.gitkeep
+!Raw_data/.gitkeep
+!Clean_data/.gitkeep
 
 # Ignore System/Cache Files
 __pycache__/
