@@ -59,6 +59,18 @@ Through rigorous testing, we discovered the **"Semantic Blind Spot"** of unsuper
 
 ---
 
+## 🔍 6. Retrospective: Dataset Balancing & AI Overfitting
+
+Looking back, if I were to approach this project again, a major architectural change I would implement is limiting the volume of benign (safe) emails used during the AI training phase.
+
+* **The Problem Identified**: Training the model on an overwhelming majority of standard business correspondence caused the AI to develop an "overfitting" bias toward generic corporate jargon.
+
+* **The Consequence**: The model implicitly learned that business terminology is a strong indicator of "normality." As a result, spear-phishing emails that hijacked corporate terminology were reconstructed far too successfully by the Autoencoder. They received an abnormally low anomaly score (MSE) and managed to bypass the unsupervised detection mechanism.
+
+* **The Retrospective Solution**: Reducing and diversifying the benign email dataset would have prevented the model from blindly relying on business keywords. This adjustment would have "calibrated" the AI to be less forgiving of corporate text, inherently raising its suspicion level toward underlying sentence structures rather than just vocabulary. Ultimately, this would have significantly improved the AI's native accuracy in catching deep-context spear-phishing attacks.
+
+  ---
+
 ## 🏁 Final Conclusion
 **Morpheus Guard** proves that high-performance cybersecurity requires a **Hybrid Mindset**. By using AI for structural detection and Heuristics for intent mapping, we achieved a **100% block rate** on tested adversarial scenarios without disrupting business continuity.
 
