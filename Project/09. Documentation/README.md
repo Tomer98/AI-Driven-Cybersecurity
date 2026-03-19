@@ -114,7 +114,3 @@ pip install torch gradio sentence-transformers pandas
 ```
 
 Open `Project/7 & 8. Prototype Development (MVP) and Performance and Effectiveness Evaluation/Performance_and_Evaluation.ipynb`, run all cells to load `spear_phishing_ae_weights.pth`, and access the Gradio dashboard for live inference.
-
-## Demo
-
-[Watch the system in action](https://youtu.be/nnoqyaXLrgw)
