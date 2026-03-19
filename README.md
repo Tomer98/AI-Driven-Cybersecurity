@@ -40,6 +40,11 @@ The system operates as a five-stage pipeline:
 1. **Setup:** Ensure you have a Python environment with `torch`, `sentence-transformers`, and `pandas` installed.
 2. **Data:** Place your `processed_emails.csv` in the root directory or mount via Google Drive.
 3. **Execution:** Run the Jupyter Notebook stages sequentially to train the model and generate the performance Confusion Matrix.
+
+## 📄 Documentation
+* [Full Project README](Project/9.%20Documentation/README.md) — detailed write-up covering data pipeline, model training, explainability, hybrid architecture, and adversarial testing results.
+* [Retrospective & Model Improvement](Project/10.%20Retrospective%20&%20Model%20Improvement/README.md) — analysis of Stage 5 limitations and V2 improvements with a 2:1 training ratio.
+
 ---
 
 # 🧪 Labs
